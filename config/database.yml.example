@@ -1,0 +1,14 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: bookbunker
+  password:
+
+development:
+  <<: *defaults
+  database: bookbunker_development
+
+test:
+  <<: *defaults
+  database: bookbunker_test
